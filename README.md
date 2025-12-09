@@ -80,5 +80,3 @@ Three-tier plan:
 HTML5                   Semantic structure |
 CSS3                    Styling, Grid, Flexbox, animations |
 Google Fonts (Poppins)  UI typography |
-## 🗂 Project Structure  
-
