@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinTrack – Fintech Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <h2 class="logo">FinTrack</h2>
+
+            <nav class="nav-links">
+                <a href="#stats">Statistics</a>
+                <a href="#transactions">Transactions</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#contact" class="btn primary">Get Started</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+
+            <div class="hero-text">
+                <h1>Manage your finances effortlessly</h1>
+                <p>Track expenses, manage savings, and monitor transactions efficiently with FinTrack — your personal
+                    finance dashboard.</p>
+                <button class="btn primary">Create Free Account</button>
+            </div>
+
+            <div class="hero-img">
+                <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=700" alt="Finance dashboard">
+            </div>
+        </section>
+
+        <section id="stats" class="container">
+            <h2 class="section-title">Your Financial Overview</h2>
+
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <h3>₹54,200</h3>
+                    <p>Total Balance</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>₹12,800</h3>
+                    <p>Monthly Savings</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>₹24,550</h3>
+                    <p>Expenses This Month</p>
+                </article>
+
+                <article class="stat-card">
+                    <h3>₹4,500</h3>
+                    <p>Investments Growth</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="transactions" class="container">
+            <h2 class="section-title">Recent Transactions</h2>
+
+            <div class="transaction-list">
+
+                <article class="transaction-card">
+                    <span>💳</span>
+                    <div>
+                        <h4>Amazon Purchase</h4>
+                        <p>Shopping</p>
+                    </div>
+                    <strong class="amount negative">-₹1,299</strong>
+                </article>
+
+                <article class="transaction-card">
+                    <span>💼</span>
+                    <div>
+                        <h4>Salary Credit</h4>
+                        <p>Income</p>
+                    </div>
+                    <strong class="amount positive">+₹45,000</strong>
+                </article>
+
+                <article class="transaction-card">
+                    <span>🍔</span>
+                    <div>
+                        <h4>Zomato Order</h4>
+                        <p>Food & Dining</p>
+                    </div>
+                    <strong class="amount negative">-₹320</strong>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">Choose Your Plan</h2>
+
+                <div class="pricing-grid">
+
+                    <article class="price-card">
+                        <h3>Basic</h3>
+                        <p class="price">₹0 / month</p>
+                        <ul>
+                            <li>✔ Expense Tracking</li>
+                            <li>✔ Savings Overview</li>
+                            <li>✖ Investment Dashboard</li>
+                        </ul>
+                        <button class="btn primary">Start Free</button>
+                    </article>
+
+                    <article class="price-card recommended">
+                        <h3>Premium</h3>
+                        <p class="price">₹499 / month</p>
+                        <ul>
+                            <li>✔ All Basic Features</li>
+                            <li>✔ Investment Tracking</li>
+                            <li>✔ Priority Support</li>
+                        </ul>
+                        <button class="btn primary">Upgrade</button>
+                    </article>
+
+                    <article class="price-card">
+                        <h3>Enterprise</h3>
+                        <p class="price">₹999 / month</p>
+                        <ul>
+                            <li>✔ Team Access</li>
+                            <li>✔ Advanced Analytics</li>
+                            <li>✔ Unlimited Data</li>
+                        </ul>
+                        <button class="btn primary">Contact Sales</button>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container contact-section" aria-labelledby="contact-title">
+            <h2 id="contact-title" class="section-title">Contact Us</h2>
+
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-row full">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message..."
+                        required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" class="btn primary">Submit</button>
+                    <div id="contactFeedback" role="status" aria-live="polite" style="margin-left:12px"></div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>FinTrack</h4>
+                <p>Smart dashboard for your smart finances.</p>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p>Email: support@fintrack.com</p>
+                <p>Phone: +91 9876543210</p>
+            </div>
+
+            <div>
+                <h4>Follow Us</h4>
+                <p>🌐 Instagram</p>
+                <p>📘 Facebook</p>
+                <p>🐦 Twitter</p>
+            </div>
+        </div>
+
+        <p class="copyright">© 2024 FinTrack. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
